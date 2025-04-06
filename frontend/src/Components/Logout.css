@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap');
+
+.logout-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('https://res.cloudinary.com/dugrcdfee/image/upload/v1743916892/ChatGPT_Image_Apr_6_2025_10_50_10_AM_shw5n6.png') no-repeat center center/cover;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Roboto', sans-serif;
+}
+
+.logout-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(6px);
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.logout-card {
+  position: relative;
+  z-index: 2;
+  background: rgba(20, 20, 20, 0.8);
+  padding: 40px 30px;
+  border-radius: 24px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  border: 1px solid #333;
+  color: #f5f5f5;
+}
+
+.logout-card h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  color: #d4af7f;
+  margin-bottom: 8px;
+}
+
+.logout-card p {
+  font-size: 16px;
+  color: #ccc;
+  margin: 12px 0;
+}
+
+.glassy {
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.logout-greeting {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  color: #f8e4c1;
+  margin-bottom: 16px;
+  animation: fadeInUp 1s ease;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

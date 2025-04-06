@@ -1,0 +1,60 @@
+.lux-header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 18px 24px; /* reduced to avoid overflow */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.6); /* pure black semi-transparent */
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  font-family: 'Playfair Display', serif;
+  overflow-x: hidden; /* Prevent header overflow */
+}
+
+.lux-logo {
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  color: #fff;
+}
+
+.lux-nav {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.lux-nav a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.lux-nav a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background: white;
+  transition: width 0.3s ease;
+}
+
+.lux-nav a:hover {
+  color: #ffffff;
+}
+
+.lux-nav a:hover::after {
+  width: 100%;
+}

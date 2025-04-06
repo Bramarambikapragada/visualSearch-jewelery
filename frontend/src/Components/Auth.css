@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #0e0e0e;
+  color: #f5f5f5;
+}
+
+.auth-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('https://res.cloudinary.com/dugrcdfee/image/upload/v1743916892/ChatGPT_Image_Apr_6_2025_10_50_10_AM_shw5n6.png') no-repeat center center/cover;
+  position: relative;
+  overflow: hidden;
+}
+
+.auth-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(6px);
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.auth-card {
+  position: relative;
+  z-index: 2;
+  background: rgba(20, 20, 20, 0.8);
+  padding: 60px 50px;
+  border-radius: 24px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+  width: 500px;
+  max-width: 95%;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  border: 1px solid #333;
+}
+
+.auth-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 34px;
+  color: #d4af7f;
+  margin-bottom: 8px;
+}
+
+.auth-subtitle {
+  font-size: 16px;
+  color: #aaa;
+  margin-bottom: 28px;
+}
+
+.auth-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.auth-card input {
+  padding: 16px;
+  border: 1px solid #555;
+  border-radius: 12px;
+  font-size: 16px;
+  background-color: #1a1a1a;
+  color: #f5f5f5;
+}
+
+.auth-card input::placeholder {
+  color: #888;
+}
+
+.auth-card input:focus {
+  outline: none;
+  border-color: #d4af7f	;
+  box-shadow: 0 0 5px #d4af7f	;
+}
+
+.auth-card select {
+  padding: 16px;
+  border: 1px solid #555;
+  border-radius: 12px;
+  font-size: 16px;
+  background-color: #1a1a1a;
+  color: #f5f5f5;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='16'%20height='16'%20fill='%23d4af7f'%20class='bi%20bi-chevron-down'%20viewBox='0%200%2016%2016'%3E%3Cpath%20fill-rule='evenodd'%20d='M1.646%205.646a.5.5%200%200%201%20.708%200L8%2011.293l5.646-5.647a.5.5%200%200%201%20.708.708l-6%206a.5.5%200%200%201-.708%200l-6-6a.5.5%200%200%201%200-.708z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  background-size: 16px;
+  cursor: pointer;
+}
+
+.auth-card select:focus {
+  outline: none;
+  border-color: #d4af7f;
+  box-shadow: 0 0 5px #d4af7f;
+}
+
+
+.auth-card button {
+  padding: 16px;
+  background: #d4af7f	;
+  color: #0e0e0e;
+  border: none;
+  font-weight: bold;
+  font-size: 17px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.auth-card button:hover {
+  background: #d4af7f	;
+  box-shadow: 0 0 10px #d4af7f	;
+}
+
+.auth-footer {
+  margin-top: 20px;
+  font-size: 15px;
+  color: #ccc;
+}
+
+.auth-footer a {
+  color: #d4af7f	;
+  text-decoration: none;
+  font-weight: bold;
+}
+.glassy {
+  background: rgba(0, 0, 0, 0.6); /* Deeper black for stronger elegance */
+  border: 1px solid rgba(255, 255, 255, 0.08); /* Subtle clean border */
+  backdrop-filter: blur(14px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+.auth-card button:hover {
+  background-color: #111;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.15);
+  color: #d4af7f;
+}
+
+.auth-card input:focus {
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+}
+
+.error {
+  color: #ff4d4f;
+  font-size: 0.85rem;
+  margin: 4px 0 10px 4px;
+  font-weight: 500;
+  display: block;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-2px); }
+  to { opacity: 1; transform: translateY(0); }
+}
